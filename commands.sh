@@ -1,0 +1,6 @@
+sbatch --job-name=current0h --output=c0h.out --wrap="python -u extract_profiles.py -c 0 -t 0"
+sbatch --job-name=current1h --output=c1h.out --wrap="python -u extract_profiles.py -c 0 -t 1"
+sbatch --job-name=current2h --output=c2h.out --wrap="python -u extract_profiles.py -c 0 -t 2"
+sbatch --job-name=future0h --output=f0h.out --wrap="python -u extract_profiles.py -c 1 -t 0"
+sbatch --job-name=future1h --output=f1h.out --wrap="python -u extract_profiles.py -c 1 -t 1"
+sbatch --job-name=future2h --output=f2h.out --wrap="python -u extract_profiles.py -c 1 -t 2"
